@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-        "id": 1,
+      "id": 1,
       "author": "Taylor Hatmaker",
       "title": "Robinhood almost imploded during the Gamestop meme stock chaos",
       "description": "The House Committee on Financial Services released a report late last week offering a harrowing glimpse inside Robinhood during the frenzy around Gamestop stock early last year. The stock trading and investing app was blindsided by the surge in interest from …",
@@ -11,8 +11,7 @@
       "content": "The House Committee on Financial Services released a report late last week offering a harrowing glimpse inside Robinhood during the frenzy around Gamestop stock early last year.\r\nThe stock trading an… [+3972 chars]"
     },
     {
-      
-        "id": 2,
+      "id": 2,
       "author": "Stefanie Waldek",
       "title": "At NASA's Lunabotics competition, students design mining robots for the moon",
       "description": "If this year’s Lunabotics competition is any indication, there’s a bright future ahead for the surface of the moon — and below it. The NASA-hosted challenge saw 39 teams of university students building lunar mining robots, which were tasked with digging up ro…",
@@ -22,7 +21,7 @@
       "content": "If this year’s Lunabotics competition is any indication, there’s a bright future ahead for the surface of the moon and below it.\r\nThe NASA-hosted challenge saw 39 teams of university students buildin… [+2349 chars]"
     },
     {
-        "id": 3,
+      "id": 3,
       "author": "Manish Singh",
       "title": "Google backs Progcap, a startup delivering working capital to small retailers in India",
       "description": "The investment is part of a $40 million fresh funding Progcap has raised, said the startup, which also counts Tiger Global and Sequoia India among backers.",
@@ -30,6 +29,22 @@
       "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/06/GettyImages-520120864.jpg?w=616",
       "publishedAt": "2022-06-27T20:43:14Z",
       "content": "Google has invested in Progcap, an Indian startup that provides working capital to small and medium-sized businesses, the firms said Tuesday, making a new push into a category that has attracted the … [+3061 chars]"
+    },
+    {
+      "title": "",
+      "author": "",
+      "urlToImage": "",
+      "url": "",
+      "content": "",
+      "id": 4
+    },
+    {
+      "title": "Chips",
+      "author": "Chips",
+      "urlToImage": "Chips",
+      "url": "Chips",
+      "content": "Chips",
+      "id": 5
     }
   ]
 }

@@ -2,20 +2,11 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 import Home from './Home'
 import PostBlog from './PostBlog'
-import {Route,Routes} from 'react-dom'
+import { Route, Routes } from "react-router-dom";
 
 
 function App(){
 const [article, setArticles]=useState([])
-
-//const [searchCar,setSearch]=useState("")
- 
-
-
-{/*const search=(data)=>(
-  data.filter((car)=>(car.Make.toLowerCase().includes(searchCar)) || (car.Model.toLowerCase().includes(searchCar))
-)) 
-*/}
 
 function addArticle(newArticle) {
   setArticles([...article, newArticle])
@@ -33,9 +24,13 @@ useEffect(() => {
 console.log({article})
 
   return (
-    <div><Home article={article} setArticles={setArticles} />
-    <PostBlog addArticle={addArticle}/>
+    <div>
+    <Routes>
+    <Route path="/" element= {<Home article={article} setArticles={setArticles} />}></Route>
+    <Route path="/postblog" element= {<PostBlog addArticle={addArticle}/>}></Route>
+    </Routes>
     </div>
+   
   )
 }
 
