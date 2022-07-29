@@ -10,13 +10,13 @@ import Footer from './Footer';
 
 
 function App(){
-
+// Declaring variables
 const [article, setArticles]=useState([])
 
 function addArticle(newArticle) {
   setArticles([...article, newArticle])
 } 
-
+// Passing the USE STATE Effect
 useEffect(() => {
   fetch("http://localhost:3004/articles")
   .then(response => response.json())
