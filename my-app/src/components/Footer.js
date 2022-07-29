@@ -4,9 +4,11 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
+// importing all the needed UI 
 
 
 function Footer() {
+  // creating a function for footer
   return (
     <div style={{margin:"20px"}}> <Box sx={{ flexGrow: 4}}>
     <AppBar position="static">
