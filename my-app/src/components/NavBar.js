@@ -41,5 +41,5 @@ function NavBar() {
     </div>
   )
 }
-
+// Exporting to App.js
 export default NavBar
