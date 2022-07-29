@@ -2,8 +2,10 @@ import React from 'react'
 import {useState} from 'react'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button';
+// Importing all the important components and material UI for react
 
 function PostBlog({addArticle}) {
+  // Declaring Variables for the blog post
     const [title, setTitle] = useState("")
     const [image, setImage] = useState("")
     const [author, setAuthor] = useState("")

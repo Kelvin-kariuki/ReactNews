@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 // Import bootsrap templates to make the page interactive
 
 function NavBar() {
-    // Creating a function for the NavBar. The function is returning the headers and links.
+// Creating a function for the NavBar. The function is returning the headers and links.
   return (
     <div>
     <h1 style={{textAlign: 'center'}}>Tech News</h1>
