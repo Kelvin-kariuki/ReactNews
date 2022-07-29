@@ -31,6 +31,7 @@ console.log({article})
       <div>
       <NavBar/>
       <Routes>
+      {/* creating routes to render the page */}
       <Route path="/" element= {<Home article={article} setArticles={setArticles} />}></Route>
       <Route path="/postblog" element= {<PostBlog addArticle={addArticle} />}></Route>
       </Routes>
