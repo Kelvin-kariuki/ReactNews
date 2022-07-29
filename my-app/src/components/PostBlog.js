@@ -12,7 +12,7 @@ function PostBlog({addArticle}) {
     const [content, SetContent] = useState("")
     const [url, setUrl] = useState("")
 
-    
+  // Creating a function for submit
      function handleSubmit(event) {
       event.preventDefault();
       let newArticle={
