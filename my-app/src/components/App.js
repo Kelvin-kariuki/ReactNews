@@ -28,14 +28,14 @@ useEffect(() => {
 console.log({article})
 
   return (
-    <div>
-    <NavBar/>
-    <Routes>
-    <Route path="/" element= {<Home article={article} setArticles={setArticles} />}></Route>
-    <Route path="/postblog" element= {<PostBlog addArticle={addArticle} />}></Route>
-    </Routes>
-    <Footer/>
-    </div>
+      <div>
+      <NavBar/>
+      <Routes>
+      <Route path="/" element= {<Home article={article} setArticles={setArticles} />}></Route>
+      <Route path="/postblog" element= {<PostBlog addArticle={addArticle} />}></Route>
+      </Routes>
+      <Footer/>
+      </div>
    
   )
 }
