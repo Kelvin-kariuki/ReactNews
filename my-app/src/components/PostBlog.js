@@ -24,7 +24,7 @@ function PostBlog({addArticle}) {
 
        
       }
-  
+  // Initiating API post request. The DB is local
       fetch("http://localhost:3004/articles", {
         method: "POST",
         headers: {
@@ -36,6 +36,7 @@ function PostBlog({addArticle}) {
       .then(data => {
        addArticle(data) 
       })
+      // Setting variables with empty strings
       setTitle("")
       setImage("")
       setUrl("")
@@ -50,6 +51,7 @@ function PostBlog({addArticle}) {
       justifyContent:"center",
       flexDirection:"column"
     }}>
+    {/* Creating the table for post article */}
             <TextField id="standard-basic" label="Title" variant="standard" onChange={(e) => setTitle(e.target.value)} value={title} style={{ margin:"10px 10px",
        width:"50%",
       height:"40px"}}/>
@@ -65,7 +67,7 @@ function PostBlog({addArticle}) {
             <TextField id="standard-basic" label="Read More URL" variant="standard" onChange={(e) => setUrl(e.target.value)} value={url} style={{ margin:"10px 10px",
        width:"50%",
       height:"40px"}} />
-
+{/* Creating a button for Submit and putting correct CSS */}
 <Button variant="contained" color="success" onClick={handleSubmit} style={{ margin:"10px 0",
        width:"20%",
       height:"30px",
