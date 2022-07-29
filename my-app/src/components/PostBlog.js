@@ -1,5 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button';
 
 function PostBlog({addArticle}) {
     const [title, setTitle] = useState("")
@@ -40,15 +42,35 @@ function PostBlog({addArticle}) {
     }
   return (
 
-    <div>
-        <form>
-            <input type="text" name="name" placeholder="Title" onChange={(e) => setTitle(e.target.value)} value={title}/>
-            <input type="text" name="name" placeholder="Author" onChange={(e) => setAuthor(e.target.value)} value={author}/>
-            <input type="text" name="name" placeholder="Content" onChange={(e) => SetContent(e.target.value)} value={content}/>
-            <input type="text" name="name" placeholder="Image Url" onChange={(e) => setImage(e.target.value)} value={image}/>
-            <input type="text" name="name" placeholder="Read More Url" onChange={(e) => setUrl(e.target.value)} value={url} />
-            <button onClick={handleSubmit}>Submit</button>
-        </form>
+    <div style={{
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center",
+      flexDirection:"column"
+    }}>
+            <TextField id="standard-basic" label="Title" variant="standard" onChange={(e) => setTitle(e.target.value)} value={title} style={{ margin:"10px 10px",
+       width:"50%",
+      height:"40px"}}/>
+            <TextField id="standard-basic" label="Image URL" variant="standard" onChange={(e) => setImage(e.target.value)} value={image} style={{ margin:"10px 10px",
+       width:"50%",
+      height:"40px"}}/>
+            <TextField id="standard-basic" label="Author" variant="standard"  onChange={(e) => setAuthor(e.target.value)} value={author} style={{ margin:"10px 10px",
+       width:"50%",
+      height:"40px"}}/>
+            <TextField id="standard-basic" label="Content" variant="standard" onChange={(e) => SetContent(e.target.value)} value={content} style={{ margin:"10px 10px",
+       width:"50%",
+      height:"40px"}}/>
+            <TextField id="standard-basic" label="Read More URL" variant="standard" onChange={(e) => setUrl(e.target.value)} value={url} style={{ margin:"10px 10px",
+       width:"50%",
+      height:"40px"}} />
+
+<Button variant="contained" color="success" onClick={handleSubmit} style={{ margin:"10px 0",
+       width:"20%",
+      height:"30px",
+      top:"10px" }}>
+  Submit News
+</Button>
+        
     </div>
   )
 }

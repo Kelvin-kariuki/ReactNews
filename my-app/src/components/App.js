@@ -3,9 +3,13 @@ import { useEffect,useState } from 'react'
 import Home from './Home'
 import PostBlog from './PostBlog'
 import { Route, Routes } from "react-router-dom";
+import NavBar from './NavBar';
+import Footer from './Footer';
+
 
 
 function App(){
+
 const [article, setArticles]=useState([])
 
 function addArticle(newArticle) {
@@ -25,10 +29,12 @@ console.log({article})
 
   return (
     <div>
+    <NavBar/>
     <Routes>
     <Route path="/" element= {<Home article={article} setArticles={setArticles} />}></Route>
-    <Route path="/postblog" element= {<PostBlog addArticle={addArticle}/>}></Route>
+    <Route path="/postblog" element= {<PostBlog addArticle={addArticle} />}></Route>
     </Routes>
+    <Footer/>
     </div>
    
   )
