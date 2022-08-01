@@ -4,8 +4,9 @@ import Button from '@mui/material/Button'
 
 function Home({ article, setArticles }) {
   // Creating a function for Articles and API fetch delete
+  // http://localhost:3004/articles/${id}
   function handleDelete(id) {
-    fetch(`http://localhost:3004/articles/${id}`, {
+    fetch(`https://protected-citadel-60430.herokuapp.com/articles/${id}`, {
       method: 'DELETE',
     })
       .then((r) => r.json())

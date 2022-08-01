@@ -17,8 +17,10 @@ function addArticle(newArticle) {
   setArticles([...article, newArticle])
 } 
 // Passing the USE STATE Effect
+// https://protected-citadel-60430.herokuapp.com/articles
+// http://localhost:3004/articles
 useEffect(() => {
-  fetch("http://localhost:3004/articles")
+  fetch("https://protected-citadel-60430.herokuapp.com/articles")
   .then(response => response.json())
   .then((data) => {
     setArticles(data)

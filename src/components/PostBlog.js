@@ -23,7 +23,8 @@ function PostBlog({ addArticle }) {
       content: content,
     }
     // Initiating API post request. The DB is local
-    fetch('http://localhost:3004/articles', {
+    // http://localhost:3004/articles
+    fetch('https://protected-citadel-60430.herokuapp.com/articles', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
